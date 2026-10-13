@@ -1,0 +1,26 @@
+{
+  "name": "Blox",
+  "symbol": "BLOX",
+  "decimals": 18,
+  "chainId": 1,
+  "contract": "BloxToken",
+  "totalSupply": "1000000000000000000000000000",
+  "logoURI": "ipfs://QmWJsrdD9smahpdyqjBzDBodJkJJGNznMA2Wrh15R1hhCp",
+  "logo": {
+    "file": "assets/logo/blox.jpg",
+    "mimeType": "image/jpeg",
+    "width": 400,
+    "height": 400,
+    "bytes": 56060,
+    "sha256": "c2aeb53e69e10a7a4654a97ce8b26bd0a99a843d024ad6f09f6f7d235ca2eaec",
+    "ipfsCidV0": "QmWJsrdD9smahpdyqjBzDBodJkJJGNznMA2Wrh15R1hhCp",
+    "ipfsCidV1": "bafybeidwnezpefbhckt655vgpzbllnnqqeo4t3enirkrbgajb3xx4uwuru",
+    "source": "https://x.com/blox_imd",
+    "sourceImage": "https://pbs.twimg.com/profile_images/2108499797414236160/QJxnGSNM.jpg",
+    "retrievedAt": "2026-10-13",
+    "modified": false
+  },
+  "links": {
+    "x": "https://x.com/blox_imd"
+  }
+}
