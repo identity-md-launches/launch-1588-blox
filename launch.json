@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "BloxToken",
+    "name": "Blox",
+    "symbol": "BLOX",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8800,
+    "initialMarketCapWei": "10000000000000000000",
+    "remainderTo": "0xf2816f3f05fac35577b1930ffd09b531b62628df"
+  },
+  "notes": "BloxToken (src/BloxToken.sol) is a fixed-supply ERC-20 (OpenZeppelin ERC20 + ERC20Permit, solc 0.8.26) named Blox, symbol BLOX, 18 decimals. Its constructor takes no arguments and mints the whole supply of 1,000,000,000 BLOX (1000000000000000000000000000 minor units) exactly once to msg.sender, the ProjectFactory, which pays it out: the swarm's share to the launch's MerkleDistributor, 88% to seed the single-sided ETH/BLOX Uniswap v4 pool, and the remainder to economics.remainderTo. Every transfer moves exactly the amount stated: no fee, tax, reflection, burn-on-transfer, max wallet, cooldown or trading switch, so no exemption of the factory, the PoolManager or the distributor is needed and the $factory, $poolManager and $launchNumber placeholders are not used. There is no owner, admin, minter, pauser, blacklist, freeze, seize, burnFrom or upgrade path, no proxy, and no DELEGATECALL, CALLCODE or SELFDESTRUCT; the supply cannot grow after construction. EIP-2612 permit is included (EIP-712 domain name Blox, version 1). No application contracts are deployed and nothing needs to be called after deployment. The official token logo is the unmodified profile picture of https://x.com/blox_imd, committed as assets/logo/blox.jpg (56,060 bytes, 400x400 JPEG, SHA-256 c2aeb53e69e10a7a4654a97ce8b26bd0a99a843d024ad6f09f6f7d235ca2eaec); the token records its content-addressed URI ipfs://QmWJsrdD9smahpdyqjBzDBodJkJJGNznMA2Wrh15R1hhCp, that hash and the source URL on chain as constants (logoURI(), LOGO_URI, LOGO_SHA256, LOGO_SOURCE). No logo was generated, edited or replaced. Limitation: the file is content-addressed but not yet pinned, since this work had no pinning credentials; pinning the committed file as is yields the same CID. The pool opens at the chain's 1.25% launch fee; pool.initialPrice is provenance only and the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
